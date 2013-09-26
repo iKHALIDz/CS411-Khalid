@@ -58,18 +58,23 @@
  
     NSString *N=[self.NameTextField.text description];
     
+    
     PersonProfile *P;
     
-    //P=[P initWithName:@"N" AndHight:hight AndWeight:wieght];
+    P=[PersonProfile alloc];
+    
+    P=[P initWithName:N AndHight:hight AndWeight:wieght];
     
     
-    P=[[PersonProfile alloc] init];
-    P.Hight=hight;
-    P.Weight=wieght;
-    P.Name=N;
+    NSLog(@"%@",P);
+    
+    //P=[[PersonProfile alloc] init];
+    //P.Hight=hight;
+    //P.Weight=wieght;
+    //P.Name=N;
     
     
-    double  BMI=[P BMICalcaution:P];
+    double  BMI=[P BMICalcaution];
     
     
     self.BMILabel.text = [NSString stringWithFormat:@"%.2f",BMI];

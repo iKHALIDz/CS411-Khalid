@@ -16,22 +16,22 @@
 @synthesize  Weight;
 
  
-/*-(id) initWithName :(NSString*)aName AndHight:(double)aHight AndWeight:(double)aWeight
+-(id) initWithName :(NSString*)aName AndHight:(double)aHight AndWeight:(double)aWeight
 {
     if(self !=nil)
  {
         
-        Name=aName;
-        Hight=aHight;
-        Weight=aWeight;
+        self.Name=aName;
+        self.Hight=aHight;
+        self.Weight=aWeight;
         
     }//
     
     return self;
     
 }
-*/
 
+/*
 -(double) BMICalcaution : (PersonProfile *) aPersonProfile;
 {
     
@@ -47,6 +47,32 @@
     
     return BMI;
 
+}
+*/
+
+
+-(double) BMICalcaution
+{
+    double wieght = self.Weight;
+    
+    
+    double hight = self.Hight;
+    
+    double BMI=wieght / (hight*hight);
+    
+    
+    return BMI;
+}
+
+
+-(NSString*) description
+{
+    
+    NSString * descriptionString = [NSString stringWithFormat:@"Name: %@ Hight %f Weight %f",self.Name,self.Hight,self.Weight];
+    
+    return descriptionString;
+
+ 
 }
 
 @end

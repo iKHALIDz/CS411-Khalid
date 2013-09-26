@@ -14,9 +14,13 @@
 @property  double Hight; 
 @property  double  Weight; 
  
-//-(id) initWithName :(NSString*)aName AndHight:(double)aHight AndWeight:(double)aWeight;
+-(id) initWithName :(NSString*)aName AndHight:(double)aHight AndWeight:(double)aWeight;
 
--(double) BMICalcaution : (PersonProfile *) aPersonProfile;
+//-(double) BMICalcaution : (PersonProfile *) aPersonProfile;
+
+-(double) BMICalcaution;
+
+-(NSString*) description;
 
 
 
