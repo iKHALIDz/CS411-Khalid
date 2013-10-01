@@ -16,10 +16,8 @@
 @implementation  ViewController
 
 
-
 - (void)touchesBegan: (NSSet *) touches withEvent: (UIEvent *) event
 {
-    //
     if ( ! [self isFirstResponder])
     {
         if ([self.WeightTextField isFirstResponder])
@@ -28,18 +26,15 @@
         if ([self.HightTextField isFirstResponder])
         {[self.HightTextField resignFirstResponder];}
         
-        if ([self.NameTextField isFirstResponder])
-        {[self.NameTextField resignFirstResponder];}
     }
 }
-
-
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
     
 }
 
@@ -56,22 +51,12 @@
     double hight = [self.HightTextField.text doubleValue];
     
  
-    NSString *N=[self.NameTextField.text description];
     
     
     PersonProfile *P;
     
     P=[PersonProfile alloc];
-    
-    P=[P initWithName:N AndHight:hight AndWeight:wieght];
-    
-    
-    NSLog(@"%@",P);
-    
-    //P=[[PersonProfile alloc] init];
-    //P.Hight=hight;
-    //P.Weight=wieght;
-    //P.Name=N;
+    P=[P initHight:hight AndWeight:wieght];
     
     
     double  BMI=[P BMICalcaution];
@@ -82,4 +67,6 @@
 
 }
 
+
+ 
 @end

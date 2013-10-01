@@ -10,17 +10,13 @@
 
 @interface PersonProfile : NSObject
 
-@property (weak, nonatomic) NSString *Name;
 @property  double Hight; 
 @property  double  Weight; 
  
--(id) initWithName :(NSString*)aName AndHight:(double)aHight AndWeight:(double)aWeight;
-
-//-(double) BMICalcaution : (PersonProfile *) aPersonProfile;
+-(id) initHight:(double)aHight AndWeight:(double)aWeight;
 
 -(double) BMICalcaution;
 
--(NSString*) description;
 
 
 

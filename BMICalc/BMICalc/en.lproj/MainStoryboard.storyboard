@@ -30,13 +30,13 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WT6-n5-m1y">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="LBz-VZ-xIc"/>
-                                    <constraint firstAttribute="width" constant="97" id="fmI-cg-cvz"/>
+                                    <constraint firstAttribute="width" constant="97" id="2Wt-Ob-cB6"/>
+                                    <constraint firstAttribute="height" constant="30" id="kBJ-bH-G46"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mhi-N6-F4c">
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hight" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mhi-N6-F4c">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
@@ -58,73 +58,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWi-Ef-Q54">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioB-bv-Zeh">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhQ-oB-f3T">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="JhK-wU-hIN" secondAttribute="bottom" constant="179" id="3sD-Ni-3tL"/>
                             <constraint firstItem="Mhi-N6-F4c" firstAttribute="top" secondItem="3" secondAttribute="top" constant="161" id="48H-OW-iEB"/>
                             <constraint firstItem="2dq-fP-vNT" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="107" id="6cF-1D-hJT"/>
-                            <constraint firstItem="Mhi-N6-F4c" firstAttribute="leading" secondItem="WT6-n5-m1y" secondAttribute="leading" type="default" id="7cY-Vr-w0R"/>
-                            <constraint firstItem="ioB-bv-Zeh" firstAttribute="leading" secondItem="9CD-1S-oaL" secondAttribute="leading" type="default" id="9YC-gX-EGl"/>
-                            <constraint firstItem="WT6-n5-m1y" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="148" id="I4I-6H-Onc"/>
-                            <constraint firstItem="xhQ-oB-f3T" firstAttribute="baseline" secondItem="HWi-Ef-Q54" secondAttribute="baseline" type="default" id="IiO-OV-Ne8"/>
+                            <constraint firstItem="WT6-n5-m1y" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="148" id="LDV-QZ-F5U"/>
                             <constraint firstItem="9CD-1S-oaL" firstAttribute="trailing" secondItem="peP-IC-s6W" secondAttribute="trailing" type="default" id="Qq8-HZ-gcB"/>
                             <constraint firstItem="9CD-1S-oaL" firstAttribute="leading" secondItem="peP-IC-s6W" secondAttribute="leading" type="default" id="S1p-vb-7Qz"/>
                             <constraint firstItem="Mhi-N6-F4c" firstAttribute="baseline" secondItem="9CD-1S-oaL" secondAttribute="baseline" type="default" id="Tuc-nb-X6M"/>
-                            <constraint firstItem="2dq-fP-vNT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="37" id="Wph-di-pgh"/>
-                            <constraint firstItem="ioB-bv-Zeh" firstAttribute="bottom" secondItem="HWi-Ef-Q54" secondAttribute="bottom" type="default" id="Xqj-6w-0gY"/>
-                            <constraint firstItem="xhQ-oB-f3T" firstAttribute="leading" secondItem="HWi-Ef-Q54" secondAttribute="leading" type="default" id="YQO-et-Yph"/>
-                            <constraint firstItem="HWi-Ef-Q54" firstAttribute="leading" secondItem="Mhi-N6-F4c" secondAttribute="leading" type="default" id="YcY-lg-3NV"/>
-                            <constraint firstItem="xhQ-oB-f3T" firstAttribute="top" secondItem="Mhi-N6-F4c" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aha-F2-6tE"/>
+                            <constraint firstItem="WT6-n5-m1y" firstAttribute="leading" secondItem="Mhi-N6-F4c" secondAttribute="leading" type="default" id="ZcV-jx-izO"/>
+                            <constraint firstItem="WT6-n5-m1y" firstAttribute="trailing" secondItem="Mhi-N6-F4c" secondAttribute="trailing" type="default" id="Zm9-6h-M62"/>
                             <constraint firstItem="peP-IC-s6W" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="28" id="eTP-hO-Ody"/>
                             <constraint firstItem="peP-IC-s6W" firstAttribute="top" secondItem="3" secondAttribute="top" constant="111" id="es9-df-6Db"/>
-                            <constraint firstItem="xhQ-oB-f3T" firstAttribute="trailing" secondItem="Mhi-N6-F4c" secondAttribute="trailing" type="default" id="jfp-oA-eFS"/>
                             <constraint firstItem="peP-IC-s6W" firstAttribute="baseline" secondItem="WT6-n5-m1y" secondAttribute="baseline" type="default" id="prp-ud-35n"/>
+                            <constraint firstItem="2dq-fP-vNT" firstAttribute="top" secondItem="3" secondAttribute="top" constant="37" id="qvc-Ux-pVV"/>
                             <constraint firstItem="JhK-wU-hIN" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="131" id="txC-qh-xoS"/>
-                            <constraint firstItem="xhQ-oB-f3T" firstAttribute="trailing" secondItem="HWi-Ef-Q54" secondAttribute="trailing" type="default" id="wwe-gX-DZZ"/>
                             <constraint firstItem="WT6-n5-m1y" firstAttribute="top" secondItem="peP-IC-s6W" secondAttribute="top" type="default" id="xbS-Bj-l6B"/>
-                            <constraint firstItem="Mhi-N6-F4c" firstAttribute="trailing" secondItem="WT6-n5-m1y" secondAttribute="trailing" type="default" id="zIJ-yA-vEc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="BMILabel" destination="JhK-wU-hIN" id="IaR-gh-yYV"/>
                         <outlet property="HightTextField" destination="Mhi-N6-F4c" id="Lh3-O5-ZCv"/>
-                        <outlet property="NameTextField" destination="xhQ-oB-f3T" id="mu1-df-7HT"/>
                         <outlet property="WeightTextField" destination="WT6-n5-m1y" id="QhD-f8-s2i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-14" y="-30"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="GoButtonPressed:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="BMILabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="HightTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="NameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="WeightTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

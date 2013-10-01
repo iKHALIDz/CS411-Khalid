@@ -16,7 +16,6 @@
 - (IBAction)GoButtonPressed:(UIButton *)sender;
  
 @property (weak, nonatomic) IBOutlet UILabel *BMILabel;
-@property (weak, nonatomic) IBOutlet UITextField *NameTextField;
 
 @end
 
