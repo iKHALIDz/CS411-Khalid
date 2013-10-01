@@ -40,12 +40,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="CM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T60-ma-gQh">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="cm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T60-ma-gQh">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="KG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucK-ni-vj9">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="kg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucK-ni-vj9">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,6 +68,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mee-9M-DJ2">
+                                <connections>
+                                    <action selector="SwitchToUSWeightAndMeasuresAction:" destination="2" eventType="valueChanged" id="cde-H7-SYB"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -76,16 +81,18 @@
                             <constraint firstItem="0K4-dl-wds" firstAttribute="trailing" secondItem="d2J-My-n6C" secondAttribute="trailing" type="default" id="GbJ-fa-fHr"/>
                             <constraint firstItem="qar-x3-G1T" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="60" id="HvM-Gb-2sD"/>
                             <constraint firstItem="qar-x3-G1T" firstAttribute="top" secondItem="3" secondAttribute="top" constant="72" id="KMN-bq-ziA"/>
+                            <constraint firstItem="Mee-9M-DJ2" firstAttribute="leading" secondItem="Eaw-xH-xx2" secondAttribute="leading" type="default" id="M17-No-qcp"/>
                             <constraint firstItem="c2W-Yi-Try" firstAttribute="top" secondItem="3" secondAttribute="top" constant="117" id="Txh-cA-5Hr"/>
+                            <constraint firstAttribute="bottom" secondItem="Mee-9M-DJ2" secondAttribute="bottom" constant="147" id="UoK-ba-egz"/>
                             <constraint firstItem="d2J-My-n6C" firstAttribute="top" secondItem="3" secondAttribute="top" constant="68" id="Wdg-PN-jMX"/>
                             <constraint firstItem="T60-ma-gQh" firstAttribute="centerX" secondItem="ucK-ni-vj9" secondAttribute="centerX" type="default" id="ZNl-Fk-5gG"/>
+                            <constraint firstAttribute="trailing" secondItem="Mee-9M-DJ2" secondAttribute="trailing" constant="33" id="aVW-hc-Y5u"/>
                             <constraint firstItem="d2J-My-n6C" firstAttribute="baseline" secondItem="T60-ma-gQh" secondAttribute="baseline" type="default" id="bQl-19-sw0"/>
                             <constraint firstItem="qar-x3-G1T" firstAttribute="leading" secondItem="c2W-Yi-Try" secondAttribute="leading" type="default" id="f6P-JA-ojt"/>
                             <constraint firstItem="d2J-My-n6C" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="145" id="jpF-Wa-B1C"/>
                             <constraint firstItem="0K4-dl-wds" firstAttribute="top" secondItem="c2W-Yi-Try" secondAttribute="top" type="default" id="mmX-Sv-1fV"/>
                             <constraint firstItem="T60-ma-gQh" firstAttribute="baseline" secondItem="qar-x3-G1T" secondAttribute="baseline" type="default" id="msZ-Ue-Fnt"/>
                             <constraint firstItem="c2W-Yi-Try" firstAttribute="baseline" secondItem="0K4-dl-wds" secondAttribute="baseline" type="default" id="qY9-Vn-4YH"/>
-                            <constraint firstAttribute="trailing" secondItem="Eaw-xH-xx2" secondAttribute="trailing" constant="68" id="sxJ-Qs-Kff"/>
                             <constraint firstItem="Eaw-xH-xx2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="222" id="tVh-Aa-kbu"/>
                             <constraint firstAttribute="bottom" secondItem="Wod-NL-dZT" secondAttribute="bottom" constant="44" id="wea-wk-7UF"/>
                             <constraint firstAttribute="trailing" secondItem="T60-ma-gQh" secondAttribute="trailing" constant="36" id="wnG-hp-jX0"/>
@@ -94,7 +101,10 @@
                     </view>
                     <connections>
                         <outlet property="BMILabel" destination="Eaw-xH-xx2" id="Nwv-gp-GbZ"/>
+                        <outlet property="HightLabel" destination="T60-ma-gQh" id="uYO-UY-usR"/>
                         <outlet property="HightTextField" destination="d2J-My-n6C" id="scz-j2-klo"/>
+                        <outlet property="SwitchToUSWeightAndMeasures" destination="Mee-9M-DJ2" id="pjz-eH-yip"/>
+                        <outlet property="WeightLabel" destination="ucK-ni-vj9" id="rOH-T1-HIT"/>
                         <outlet property="WeightTextField" destination="0K4-dl-wds" id="CtO-gp-WRE"/>
                     </connections>
                 </viewController>
@@ -110,8 +120,12 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="GoButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="SwitchToUSWeightAndMeasuresAction:" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="BMILabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="HightLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="HightTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="SwitchToUSWeightAndMeasures" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="WeightLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="WeightTextField" candidateClass="UITextField"/>
             </relationships>
         </class>

@@ -39,6 +39,17 @@
 }
 
 
+-(double) BMICalcaution2;
+{
+    double wieght = self.Weight;
+    
+    double hight = self.Hight;
+    
+    double BMI=(wieght * 703)/ (hight * hight);
+    
+    return BMI;
+    
+}
 
 @end
 

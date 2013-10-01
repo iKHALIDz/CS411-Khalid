@@ -43,6 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)GoButtonPressed:(UIButton *)sender {
     
     double wieght = [self.WeightTextField.text doubleValue];
@@ -53,14 +54,42 @@
     P=[BMIProfile alloc];
     P=[P initHight:hight AndWeight:wieght];
     
+    double  BMI;
     
-    double  BMI=[P BMICalcaution];
+    if(!self.SwitchToUSWeightAndMeasures.on)
+    {
+       BMI=[P BMICalcaution]; 
+    }
+    else
+    {
+        BMI=[P BMICalcaution2];
+
+    }
+    
     
     
     self.BMILabel.text = [NSString stringWithFormat:@"%.2f",BMI];
     self.BMILabel.hidden=NO;
     
 
+    
+}
+- (IBAction)SwitchToUSWeightAndMeasuresAction:(UISwitch *)sender {
+    if (self.SwitchToUSWeightAndMeasures.on) {
+        
+        self.HightLabel.text=@"in";
+        self.WeightLabel.text=@"lbs";
+        self.WeightTextField.text=@"";
+        self.HightTextField.text=@"";
+        
+    }
+    else
+    {
+        self.HightLabel.text=@"cm";
+        self.WeightLabel.text=@"kg";
+        self.WeightTextField.text=@"";
+        self.HightTextField.text=@"";
+    }
     
 }
 @end

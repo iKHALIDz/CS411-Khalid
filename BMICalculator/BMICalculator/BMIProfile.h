@@ -18,6 +18,6 @@
 
 -(double) BMICalcaution;
 
-
+-(double) BMICalcaution2;
 
 @end

@@ -19,5 +19,13 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *HightTextField;
 
+@property (weak, nonatomic) IBOutlet UISwitch *SwitchToUSWeightAndMeasures;
+
+- (IBAction)SwitchToUSWeightAndMeasuresAction:(UISwitch *)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *HightLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *WeightLabel;
 
 @end
+
