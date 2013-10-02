@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView *currentImage;
 
 - (IBAction)GoButtonPressed:(UIButton *)sender;
 
@@ -26,6 +27,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *HightLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *WeightLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *CategoryLabel;
 
 @end
 

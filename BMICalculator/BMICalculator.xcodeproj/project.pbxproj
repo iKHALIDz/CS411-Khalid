@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E95A020A17FB8A1800C86BF6 /* HealthRange.png in Resources */ = {isa = PBXBuildFile; fileRef = E95A020617FB8A1800C86BF6 /* HealthRange.png */; };
+		E95A020B17FB8A1800C86BF6 /* Obese.png in Resources */ = {isa = PBXBuildFile; fileRef = E95A020717FB8A1800C86BF6 /* Obese.png */; };
+		E95A020C17FB8A1800C86BF6 /* OverWeight.png in Resources */ = {isa = PBXBuildFile; fileRef = E95A020817FB8A1800C86BF6 /* OverWeight.png */; };
+		E95A020D17FB8A1800C86BF6 /* UnderWeight.png in Resources */ = {isa = PBXBuildFile; fileRef = E95A020917FB8A1800C86BF6 /* UnderWeight.png */; };
 		E9B27C2C17FAC59A00A44345 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B27C2B17FAC59A00A44345 /* UIKit.framework */; };
 		E9B27C2E17FAC59A00A44345 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B27C2D17FAC59A00A44345 /* Foundation.framework */; };
 		E9B27C3017FAC59A00A44345 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B27C2F17FAC59A00A44345 /* CoreGraphics.framework */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E95A020617FB8A1800C86BF6 /* HealthRange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HealthRange.png; sourceTree = "<group>"; };
+		E95A020717FB8A1800C86BF6 /* Obese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Obese.png; sourceTree = "<group>"; };
+		E95A020817FB8A1800C86BF6 /* OverWeight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OverWeight.png; sourceTree = "<group>"; };
+		E95A020917FB8A1800C86BF6 /* UnderWeight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnderWeight.png; sourceTree = "<group>"; };
 		E9B27C2817FAC59A00A44345 /* BMICalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMICalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B27C2B17FAC59A00A44345 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E9B27C2D17FAC59A00A44345 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				E9B27C3317FAC59A00A44345 /* BMICalculator-Info.plist */,
+				E95A020817FB8A1800C86BF6 /* OverWeight.png */,
+				E95A020617FB8A1800C86BF6 /* HealthRange.png */,
+				E95A020917FB8A1800C86BF6 /* UnderWeight.png */,
+				E95A020717FB8A1800C86BF6 /* Obese.png */,
 				E9B27C3417FAC59A00A44345 /* InfoPlist.strings */,
 				E9B27C3717FAC59A00A44345 /* main.m */,
 				E9B27C3917FAC59A00A44345 /* BMICalculator-Prefix.pch */,
@@ -168,6 +180,10 @@
 				E9B27C4017FAC59A00A44345 /* Default@2x.png in Resources */,
 				E9B27C4217FAC59A00A44345 /* Default-568h@2x.png in Resources */,
 				E9B27C4517FAC59A00A44345 /* MainStoryboard.storyboard in Resources */,
+				E95A020A17FB8A1800C86BF6 /* HealthRange.png in Resources */,
+				E95A020B17FB8A1800C86BF6 /* Obese.png in Resources */,
+				E95A020C17FB8A1800C86BF6 /* OverWeight.png in Resources */,
+				E95A020D17FB8A1800C86BF6 /* UnderWeight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,7 @@
 				E9B27C4D17FAC59A00A44345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
