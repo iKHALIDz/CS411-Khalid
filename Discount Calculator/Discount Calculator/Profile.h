@@ -14,5 +14,5 @@
 @property double OriginalPrice;
 @property double DiscountPrice;
 
-
+  
 @end
