@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  HelloWorld
+//  Discount Calculator
 //
-//  Created by KHALID ALAHMARI on 9/25/13.
+//  Created by KHALID ALAHMARI on 10/3/13.
 //  Copyright (c) 2013 Khalid. All rights reserved.
 //
 

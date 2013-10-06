@@ -21,13 +21,11 @@
         self.Hight=aHight;
         self.Weight=aWeight;
         
-    }//
-    
+    }
     return self;
-    
 }
 
--(double) BMICalcaution
+-(double) EnglishMetricBMICalcaution
 {
     double wieght = self.Weight;
     
@@ -39,7 +37,7 @@
 }
 
 
--(double) BMICalcaution2;
+-(double) USMetricBMICalcaution2;
 {
     double wieght = self.Weight;
     

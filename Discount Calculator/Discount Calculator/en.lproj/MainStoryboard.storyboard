@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Discount Calc.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bUS-R7-U26">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="461" id="Tth-lr-mD1"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bza-u5-pGK" userLabel="PriceTextField">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8DX-Rr-h7u"/>
+                                    <constraint firstAttribute="width" constant="185" id="eXz-kN-MI6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0hl-rM-aBj" userLabel="DollarsOffText Field">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T4w-3I-Kim"/>
+                                    <constraint firstAttribute="width" constant="185" id="ylw-Pu-Qgo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4o5-Vm-MaH" userLabel="DisccountText Field">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RzM-Ma-pRn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQr-0t-g4H" userLabel="Add'lDiscText Field">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yJ8-xt-Yb7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5of-wN-hZy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ru5-wS-3rD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3Q-lu-CYU">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="49H-LJ-iQr"/>
+                                    <constraint firstAttribute="height" constant="33" id="fBR-pt-kvr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYG-mW-9lY">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9L-sA-WeD">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="Axu-BT-2lf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="tintColor" red="0.65075600602490069" green="0.65898745061410391" blue="0.67881708559782616" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.04248046875" green="0.017354525419999999" blue="0.031976090999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.16543742511086168" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DiscountCalculate:" destination="2" eventType="touchUpInside" id="8RP-Kv-lJI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4o5-Vm-MaH" firstAttribute="top" secondItem="3" secondAttribute="top" constant="132" id="0F4-N8-Lu6"/>
+                            <constraint firstItem="Bza-u5-pGK" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="123" id="1vV-lb-QGl"/>
+                            <constraint firstItem="jQr-0t-g4H" firstAttribute="trailing" secondItem="0hl-rM-aBj" secondAttribute="trailing" type="default" id="39q-6e-PPi"/>
+                            <constraint firstItem="jQr-0t-g4H" firstAttribute="leading" secondItem="0hl-rM-aBj" secondAttribute="leading" type="default" id="9rL-1k-KoD"/>
+                            <constraint firstItem="jQr-0t-g4H" firstAttribute="top" secondItem="3" secondAttribute="top" constant="165" id="E1j-Kc-MOV"/>
+                            <constraint firstItem="0hl-rM-aBj" firstAttribute="top" secondItem="3" secondAttribute="top" constant="87" id="FB8-bf-xg3"/>
+                            <constraint firstItem="bUS-R7-U26" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="FRh-a8-YSy"/>
+                            <constraint firstAttribute="bottom" secondItem="QYG-mW-9lY" secondAttribute="bottom" constant="93" id="HTc-9W-WWQ"/>
+                            <constraint firstItem="4o5-Vm-MaH" firstAttribute="leading" secondItem="Bza-u5-pGK" secondAttribute="leading" type="default" id="J3f-Ba-bdF"/>
+                            <constraint firstAttribute="bottom" secondItem="n3Q-lu-CYU" secondAttribute="bottom" constant="153" id="LDt-f6-aVI"/>
+                            <constraint firstItem="5of-wN-hZy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="198" id="MPP-tl-TTl"/>
+                            <constraint firstItem="N9L-sA-WeD" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="102" id="TmZ-FY-0mF"/>
+                            <constraint firstItem="N9L-sA-WeD" firstAttribute="centerX" secondItem="QYG-mW-9lY" secondAttribute="centerX" type="default" id="Ybn-oC-0zv"/>
+                            <constraint firstItem="bUS-R7-U26" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="gAi-dP-XkK"/>
+                            <constraint firstAttribute="bottom" secondItem="N9L-sA-WeD" secondAttribute="bottom" constant="10" id="lMg-6Q-nLC"/>
+                            <constraint firstItem="bUS-R7-U26" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="mdP-yG-J45"/>
+                            <constraint firstItem="Bza-u5-pGK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="62" id="p9k-KH-ii7"/>
+                            <constraint firstItem="QYG-mW-9lY" firstAttribute="leading" secondItem="n3Q-lu-CYU" secondAttribute="leading" type="default" id="sLI-uU-wN5"/>
+                            <constraint firstItem="4o5-Vm-MaH" firstAttribute="leading" secondItem="5of-wN-hZy" secondAttribute="leading" type="default" id="umf-3T-6FX"/>
+                            <constraint firstItem="4o5-Vm-MaH" firstAttribute="trailing" secondItem="5of-wN-hZy" secondAttribute="trailing" type="default" id="xwd-LZ-Hsm"/>
+                            <constraint firstItem="4o5-Vm-MaH" firstAttribute="trailing" secondItem="Bza-u5-pGK" secondAttribute="trailing" type="default" id="yzA-gj-Dva"/>
+                            <constraint firstItem="0hl-rM-aBj" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="124" id="zCg-72-K4W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="neh-HL-baB"/>
+                    <connections>
+                        <outlet property="AdditionlDiscTextField" destination="jQr-0t-g4H" id="Hoq-gf-XJY"/>
+                        <outlet property="DiscountPriceLabel" destination="QYG-mW-9lY" id="Zit-7r-KNu"/>
+                        <outlet property="DiscountTextField" destination="4o5-Vm-MaH" id="EvD-14-etO"/>
+                        <outlet property="DollarsOffTextField" destination="0hl-rM-aBj" id="aCH-Da-xqK"/>
+                        <outlet property="OriginalPriceLabel" destination="n3Q-lu-CYU" id="yhi-id-PWw"/>
+                        <outlet property="PriceTextField" destination="Bza-u5-pGK" id="IVu-As-mJG"/>
+                        <outlet property="TaxTextField" destination="5of-wN-hZy" id="BRI-gA-zyZ"/>
+                        <segue destination="H6g-Wc-wZw" kind="modal" identifier="FromMainToGraph" id="gYJ-7r-ax7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="6"/>
+        </scene>
+        <!--Graph View Controller-->
+        <scene sceneID="xWI-P5-f6K">
+            <objects>
+                <viewController id="H6g-Wc-wZw" customClass="GraphViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ue0-ub-HqT" customClass="BarChart">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xIp-R6-kV9"/>
+                    <connections>
+                        <segue destination="2" kind="modal" identifier="FromGraphToMain" customClass="ReversePushStoryboardSegue" id="bvU-Yn-ShE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="So2-ck-zg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Discount Calc.jpg" width="640" height="960"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

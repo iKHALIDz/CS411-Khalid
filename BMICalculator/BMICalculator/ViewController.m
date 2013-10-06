@@ -15,12 +15,7 @@
 
 @implementation ViewController 
 
-NSArray * BMIRangArray;
-NSArray *Category;
-//NSDictionary *BMICategory;
-
 @synthesize currentImage;
-
 
 
 UIImageView *OverWeighImage;
@@ -28,45 +23,23 @@ UIImageView *UnderWeightImage;
 UIImageView *Obese;
 UIImageView *HealthyRange;
 
+UIAlertView *alert;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //UnderWeight=[[UIimage alloc] initw
+    self.HightLabel.text=@"cm";
+    self.WeightLabel.text=@"kg";
     
     
     OverWeighImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"OverWeight.png"]];
     UnderWeightImage= [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"UnderWeight.png"]];
     Obese = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Obese.png"]];
     HealthyRange = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"HealthRange.png"]];
-
-                         
-   /* Category= [NSArray arrayWithObjects:
-               @"Severe Thinness",
-               @"Moderate Thinness",
-               @"Mild Thinness",
-               @"Normal Range",
-               @"Overweight",
-               @"Obese Class I (Moderate)",
-               @"Obese Class II (Severe)",
-               @"Obese Class III (Very Severe)", nil];
     
     
-    BMIRangArray = [NSArray arrayWithObjects:
-                    [NSValue valueWithRange: NSMakeRange(0,16)],
-                    [NSValue valueWithRange: NSMakeRange(16,0.99)],
-                    [NSValue valueWithRange: NSMakeRange(17,18.49)],
-                    [NSValue valueWithRange: NSMakeRange(18.50,24.99)],
-                    [NSValue valueWithRange: NSMakeRange(25,29.99)],
-                    [NSValue valueWithRange: NSMakeRange(30,34.99)],
-                    [NSValue valueWithRange: NSMakeRange(35,39)],
-                    [NSValue valueWithRange: NSMakeRange(39,50)],nil];
-    
-    BMICategory = [[NSDictionary alloc] initWithObjects:Category forKeys:BMIRangArray];
-    
-    */
-    
+    alert = [[UIAlertView alloc] initWithTitle: @"Alert" message: @"Please Enter a Valid Values!" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                       
 }
 
@@ -86,6 +59,8 @@ UIImageView *HealthyRange;
 }
 
 
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -93,7 +68,21 @@ UIImageView *HealthyRange;
 }
 
 
-- (IBAction)GoButtonPressed:(UIButton *)sender {
+- (IBAction)GoButtonPressed:(UIButton *)sender
+{
+    
+    
+    //to resign after cliking "Calculate"
+    
+    if ( ! [self isFirstResponder])
+    {
+        if ([self.WeightTextField isFirstResponder])
+        {[self.WeightTextField resignFirstResponder];}
+        
+        if ([self.HightTextField isFirstResponder])
+        {[self.HightTextField resignFirstResponder];}
+        
+    }
     
     double wieght = [self.WeightTextField.text doubleValue];
     double hight = [self.HightTextField.text doubleValue];
@@ -107,14 +96,13 @@ UIImageView *HealthyRange;
     
     if(!self.SwitchToUSWeightAndMeasures.on)
     {
-       BMI=[P BMICalcaution]; 
+       BMI=[P EnglishMetricBMICalcaution];
     }
     else
     {
-        BMI=[P BMICalcaution2];
+        BMI=[P USMetricBMICalcaution2];
 
     }
-    
     
     
     if (BMI<16)
@@ -170,25 +158,36 @@ UIImageView *HealthyRange;
         
     }
 
+    
     self.BMILabel.text = [NSString stringWithFormat:@"%.2f",BMI];
     
-    //self.CategoryLabel.text= [BMICategory objectForKey: ];
     
     
-
+    //Checking in case if te user didn't enter a valid value
     
-    //Checking
-    if([self.HightTextField.text length]!= 0 && [self.WeightTextField.text length]!= 0)
+    if([self.HightTextField.text length]== 0 ||  [self.WeightTextField.text length]== 0)
     {
-        self.BMILabel.hidden=NO;
-        self.CategoryLabel.hidden=NO;
-        self.currentImage.hidden=NO;
+        
+        self.BMILabel.hidden=YES;
+        self.CategoryLabel.hidden=YES;
+        self.currentImage.hidden=YES;
+        
+        [alert show];
 
     }
-
-    //self.BMILabel.hidden=NO;
-    //self.CategoryLabel.hidden=NO;
+    
+    else
+    {
+    self.BMILabel.hidden=NO;
+    self.CategoryLabel.hidden=NO;
+    self.currentImage.hidden=NO;
+    }
+    
 }
+
+
+// Switching from US metric to English Metric and vise versa
+
 
 - (IBAction)SwitchToUSWeightAndMeasuresAction:(UISwitch *)sender {
     if (self.SwitchToUSWeightAndMeasures.on) {

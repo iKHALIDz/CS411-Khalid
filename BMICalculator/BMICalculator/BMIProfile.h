@@ -16,9 +16,9 @@
 
 -(id) initHight:(double)aHight AndWeight:(double)aWeight;
 
--(double) BMICalcaution;
+-(double) EnglishMetricBMICalcaution;
 
--(double) BMICalcaution2;
+-(double) USMetricBMICalcaution2;
 
 
 @end
