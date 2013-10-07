@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GraphViewController.h"
 #import "Profile.h"
 
 
 @interface BarChart : UIView
+
+@property Profile * CurrentProfile2;
 
 
 

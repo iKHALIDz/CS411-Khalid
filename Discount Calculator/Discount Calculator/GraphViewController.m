@@ -15,6 +15,7 @@
 @implementation GraphViewController
 
 @synthesize CurrentProfile;
+@synthesize BH;
 
 
 
@@ -43,6 +44,15 @@
     
     NSLog(@"%.2f",CurrentProfile.OriginalPrice);
     NSLog(@"%.2f",CurrentProfile.DiscountPrice);
+    
+    
+    BH.CurrentProfile2.OriginalPrice=CurrentProfile.OriginalPrice;
+    BH.CurrentProfile2.DiscountPrice=CurrentProfile.DiscountPrice;
+    
+    
+    
+    NSLog(@"%.2f",BH.CurrentProfile2.OriginalPrice);
+    NSLog(@"%.2f",BH.CurrentProfile2.DiscountPrice);
     
     
     UISwipeGestureRecognizer *rightSwip = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(RightSwipeSegue:)];

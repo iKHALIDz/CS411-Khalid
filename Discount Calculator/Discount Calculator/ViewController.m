@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "GraphViewController.h"
-
 
 
 @interface ViewController ()
@@ -20,6 +18,8 @@
 
 Profile *P;
 
+
+
 - (void)leftSwipeSegue:(UIGestureRecognizer*)recognizer
 {
     [self performSegueWithIdentifier:@"FromMainToGraph" sender:self];
@@ -29,7 +29,6 @@ Profile *P;
 - (void)viewDidLoad
 {
     P=[[Profile alloc] init];
-    
     
     [super viewDidLoad];
     
@@ -98,7 +97,7 @@ Profile *P;
     
         GraphViewController *GVC=[segue destinationViewController];
         [GVC setCurrentProfile:P];
-
+    
 }
 
 

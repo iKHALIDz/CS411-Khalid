@@ -9,10 +9,15 @@
 
 #import <UIKit/UIKit.h>
 #import "Profile.h"
+#import "BarChart.h"
+
 
 @interface GraphViewController : UIViewController
 
+
 @property Profile * CurrentProfile;
+@property BarChart *BH;
+
 
 
 @end

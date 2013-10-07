@@ -11,6 +11,10 @@
 
 @implementation BarChart
 
+
+@synthesize CurrentProfile2;
+
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -18,7 +22,10 @@
     }
 
     return self;
+
 }
+
+
 
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
@@ -28,7 +35,6 @@
         self.backgroundColor = [UIColor blackColor];
 		self.opaque = YES;
 		self.clearsContextBeforeDrawing = YES;
-       
     }
     
     return self;
@@ -41,7 +47,8 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-
+    
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     // Drawing with a white stroke color

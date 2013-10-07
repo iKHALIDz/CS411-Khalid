@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GraphViewController.h"
-#import "BarChart.h"
+
 #import "Profile.h"
 
 
