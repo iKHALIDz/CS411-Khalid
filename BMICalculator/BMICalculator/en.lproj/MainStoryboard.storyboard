@@ -142,6 +142,26 @@
     <resources>
         <image name="BMICalcBackground.jpg" width="640" height="960"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="GoButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="SwitchToUSWeightAndMeasuresAction:" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="BMILabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="CategoryLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="HightLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="HightTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="SwitchToUSWeightAndMeasures" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="WeightLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="WeightTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="currentImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

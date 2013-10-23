@@ -171,7 +171,7 @@ UIAlertView *alert;
         self.BMILabel.hidden=YES;
         self.CategoryLabel.hidden=YES;
         self.currentImage.hidden=YES;
-        
+         
         [alert show];
 
     }
