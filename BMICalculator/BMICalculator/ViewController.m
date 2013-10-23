@@ -160,7 +160,7 @@ UIAlertView *alert;
 
     
     self.BMILabel.text = [NSString stringWithFormat:@"%.2f",BMI];
-    
+      
     
     
     //Checking in case if te user didn't enter a valid value
