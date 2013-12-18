@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MemoryManagementExample' target in the 'MemoryManagementExample' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Final Review-(Q2) NSCopying' target in the 'Final Review-(Q2) NSCopying' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

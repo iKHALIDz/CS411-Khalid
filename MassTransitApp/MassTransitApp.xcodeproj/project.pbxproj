@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9137EDC182D73B4005118E3 /* OCTA.sl3 in Resources */ = {isa = PBXBuildFile; fileRef = E9137EDA182D73B4005118E3 /* OCTA.sl3 */; };
+		E9137EDD182D73B4005118E3 /* Metrolink.sl3 in Resources */ = {isa = PBXBuildFile; fileRef = E9137EDB182D73B4005118E3 /* Metrolink.sl3 */; };
+		E9137EE0182D8ED4005118E3 /* SQLiteDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9137EDF182D8ED4005118E3 /* SQLiteDB.m */; };
+		E91427E7182D719100C0788F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91427E6182D719100C0788F /* UIKit.framework */; };
+		E91427E9182D719100C0788F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91427E8182D719100C0788F /* Foundation.framework */; };
+		E91427EB182D719100C0788F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91427EA182D719100C0788F /* CoreGraphics.framework */; };
+		E91427F1182D719100C0788F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E91427EF182D719100C0788F /* InfoPlist.strings */; };
+		E91427F3182D719100C0788F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E91427F2182D719100C0788F /* main.m */; };
+		E91427F7182D719100C0788F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E91427F6182D719100C0788F /* AppDelegate.m */; };
+		E91427F9182D719100C0788F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E91427F8182D719100C0788F /* Default.png */; };
+		E91427FB182D719100C0788F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E91427FA182D719100C0788F /* Default@2x.png */; };
+		E91427FD182D719100C0788F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E91427FC182D719100C0788F /* Default-568h@2x.png */; };
+		E9142800182D719100C0788F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91427FE182D719100C0788F /* MainStoryboard.storyboard */; };
+		E9142805182D719100C0788F /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E9142804182D719100C0788F /* first.png */; };
+		E9142807182D719100C0788F /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9142806182D719100C0788F /* first@2x.png */; };
+		E914280C182D719100C0788F /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E914280B182D719100C0788F /* second.png */; };
+		E914280E182D719100C0788F /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E914280D182D719100C0788F /* second@2x.png */; };
+		E925048B1832E96400EF1FDE /* MSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E925048A1832E96400EF1FDE /* MSDetailViewController.m */; };
+		E925048D1832EB3200EF1FDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925048C1832EB3200EF1FDE /* CoreLocation.framework */; };
+		E925048F1832F11F00EF1FDE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925048E1832F11F00EF1FDE /* MapKit.framework */; };
+		E9250492183301A600EF1FDE /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9250491183301A600EF1FDE /* MapAnnotation.m */; };
+		E925F874183095E500AFB33E /* paper32.png in Resources */ = {isa = PBXBuildFile; fileRef = E925F872183095E500AFB33E /* paper32.png */; };
+		E925F875183095E500AFB33E /* note32.png in Resources */ = {isa = PBXBuildFile; fileRef = E925F873183095E500AFB33E /* note32.png */; };
+		E925F87C1830973800AFB33E /* MetrolineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E925F8771830973800AFB33E /* MetrolineViewController.m */; };
+		E925F87D1830973800AFB33E /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E925F8791830973800AFB33E /* PDFScrollView.m */; };
+		E925F87E1830973800AFB33E /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = E925F87B1830973800AFB33E /* TiledPDFView.m */; };
+		E925F880183097ED00AFB33E /* metrolink_system_map.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E925F87F183097ED00AFB33E /* metrolink_system_map.pdf */; };
+		E925F8831830988D00AFB33E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E925F8821830988D00AFB33E /* QuartzCore.framework */; };
+		E925F88618309A2000AFB33E /* OCTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E925F88518309A2000AFB33E /* OCTAViewController.m */; };
+		E92808FA182DCF5300C9AED8 /* Metrolink.m in Sources */ = {isa = PBXBuildFile; fileRef = E92808F9182DCF5300C9AED8 /* Metrolink.m */; };
+		E92808FD182DD26000C9AED8 /* OCTA.m in Sources */ = {isa = PBXBuildFile; fileRef = E92808FC182DD26000C9AED8 /* OCTA.m */; };
+		E989838518309B0D00FCF602 /* octa_sysmapoct13.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E989838418309B0D00FCF602 /* octa_sysmapoct13.pdf */; };
+		E989838718309F6100FCF602 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = E989838618309F6100FCF602 /* map.png */; };
+		E989838918309FFD00FCF602 /* 103-map.png in Resources */ = {isa = PBXBuildFile; fileRef = E989838818309FFD00FCF602 /* 103-map.png */; };
+		E98EEE3B182DD9EA00897979 /* MetroLineListOFALLRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = E98EEE3A182DD9EA00897979 /* MetroLineListOFALLRoutes.m */; };
+		E98EEE3E182DDC2F00897979 /* OCTAListOFALLRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = E98EEE3D182DDC2F00897979 /* OCTAListOFALLRoutes.m */; };
+		E98EEE41182EEB0B00897979 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = E98EEE40182EEB0B00897979 /* Route.m */; };
+		E98EEE441830294600897979 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = E98EEE431830294500897979 /* Station.m */; };
+		E98FBDC0182D91300063AA78 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E98FBDBF182D91300063AA78 /* libsqlite3.dylib */; };
+		E98FBDC3182D95080063AA78 /* GTDFSQL.m in Sources */ = {isa = PBXBuildFile; fileRef = E98FBDC2182D95080063AA78 /* GTDFSQL.m */; };
+		E9C344861830470100ADB830 /* MetrolineListOFAllStationInARoute.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C344851830470100ADB830 /* MetrolineListOFAllStationInARoute.m */; };
+		E9C3448C1830563200ADB830 /* OCTAListOFAllStationInARoute.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C3448B1830563200ADB830 /* OCTAListOFAllStationInARoute.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E9137EDA182D73B4005118E3 /* OCTA.sl3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCTA.sl3; sourceTree = "<group>"; };
+		E9137EDB182D73B4005118E3 /* Metrolink.sl3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Metrolink.sl3; sourceTree = "<group>"; };
+		E9137EDE182D8ED4005118E3 /* SQLiteDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteDB.h; sourceTree = "<group>"; };
+		E9137EDF182D8ED4005118E3 /* SQLiteDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDB.m; sourceTree = "<group>"; };
+		E91427E3182D719100C0788F /* MassTransitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassTransitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91427E6182D719100C0788F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E91427E8182D719100C0788F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E91427EA182D719100C0788F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E91427EE182D719100C0788F /* MassTransitApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MassTransitApp-Info.plist"; sourceTree = "<group>"; };
+		E91427F0182D719100C0788F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E91427F2182D719100C0788F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E91427F4182D719100C0788F /* MassTransitApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MassTransitApp-Prefix.pch"; sourceTree = "<group>"; };
+		E91427F5182D719100C0788F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E91427F6182D719100C0788F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E91427F8182D719100C0788F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E91427FA182D719100C0788F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E91427FC182D719100C0788F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E91427FF182D719100C0788F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E9142804182D719100C0788F /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		E9142806182D719100C0788F /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		E914280B182D719100C0788F /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		E914280D182D719100C0788F /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		E92504891832E96400EF1FDE /* MSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDetailViewController.h; sourceTree = "<group>"; };
+		E925048A1832E96400EF1FDE /* MSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDetailViewController.m; sourceTree = "<group>"; };
+		E925048C1832EB3200EF1FDE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E925048E1832F11F00EF1FDE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E9250490183301A500EF1FDE /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		E9250491183301A600EF1FDE /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		E925F872183095E500AFB33E /* paper32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper32.png; sourceTree = "<group>"; };
+		E925F873183095E500AFB33E /* note32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note32.png; sourceTree = "<group>"; };
+		E925F8761830973800AFB33E /* MetrolineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetrolineViewController.h; sourceTree = "<group>"; };
+		E925F8771830973800AFB33E /* MetrolineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetrolineViewController.m; sourceTree = "<group>"; };
+		E925F8781830973800AFB33E /* PDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFScrollView.h; sourceTree = "<group>"; };
+		E925F8791830973800AFB33E /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
+		E925F87A1830973800AFB33E /* TiledPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledPDFView.h; sourceTree = "<group>"; };
+		E925F87B1830973800AFB33E /* TiledPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledPDFView.m; sourceTree = "<group>"; };
+		E925F87F183097ED00AFB33E /* metrolink_system_map.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = metrolink_system_map.pdf; sourceTree = "<group>"; };
+		E925F8821830988D00AFB33E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E925F88418309A2000AFB33E /* OCTAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTAViewController.h; sourceTree = "<group>"; };
+		E925F88518309A2000AFB33E /* OCTAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTAViewController.m; sourceTree = "<group>"; };
+		E92808F8182DCF5300C9AED8 /* Metrolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metrolink.h; sourceTree = "<group>"; };
+		E92808F9182DCF5300C9AED8 /* Metrolink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Metrolink.m; sourceTree = "<group>"; };
+		E92808FB182DD26000C9AED8 /* OCTA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTA.h; sourceTree = "<group>"; };
+		E92808FC182DD26000C9AED8 /* OCTA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTA.m; sourceTree = "<group>"; };
+		E989838418309B0D00FCF602 /* octa_sysmapoct13.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = octa_sysmapoct13.pdf; sourceTree = "<group>"; };
+		E989838618309F6100FCF602 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		E989838818309FFD00FCF602 /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "103-map.png"; sourceTree = "<group>"; };
+		E98EEE39182DD9EA00897979 /* MetroLineListOFALLRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetroLineListOFALLRoutes.h; sourceTree = "<group>"; };
+		E98EEE3A182DD9EA00897979 /* MetroLineListOFALLRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetroLineListOFALLRoutes.m; sourceTree = "<group>"; };
+		E98EEE3C182DDC2F00897979 /* OCTAListOFALLRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTAListOFALLRoutes.h; sourceTree = "<group>"; };
+		E98EEE3D182DDC2F00897979 /* OCTAListOFALLRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTAListOFALLRoutes.m; sourceTree = "<group>"; };
+		E98EEE3F182EEB0B00897979 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		E98EEE40182EEB0B00897979 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		E98EEE421830294500897979 /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		E98EEE431830294500897979 /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		E98FBDBF182D91300063AA78 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		E98FBDC1182D95080063AA78 /* GTDFSQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDFSQL.h; sourceTree = "<group>"; };
+		E98FBDC2182D95080063AA78 /* GTDFSQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDFSQL.m; sourceTree = "<group>"; };
+		E9C344841830470100ADB830 /* MetrolineListOFAllStationInARoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetrolineListOFAllStationInARoute.h; sourceTree = "<group>"; };
+		E9C344851830470100ADB830 /* MetrolineListOFAllStationInARoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetrolineListOFAllStationInARoute.m; sourceTree = "<group>"; };
+		E9C3448A1830563200ADB830 /* OCTAListOFAllStationInARoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTAListOFAllStationInARoute.h; sourceTree = "<group>"; };
+		E9C3448B1830563200ADB830 /* OCTAListOFAllStationInARoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTAListOFAllStationInARoute.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E91427E0182D719100C0788F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E925048F1832F11F00EF1FDE /* MapKit.framework in Frameworks */,
+				E925048D1832EB3200EF1FDE /* CoreLocation.framework in Frameworks */,
+				E925F8831830988D00AFB33E /* QuartzCore.framework in Frameworks */,
+				E98FBDC0182D91300063AA78 /* libsqlite3.dylib in Frameworks */,
+				E91427E7182D719100C0788F /* UIKit.framework in Frameworks */,
+				E91427E9182D719100C0788F /* Foundation.framework in Frameworks */,
+				E91427EB182D719100C0788F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E91427DA182D719100C0788F = {
+			isa = PBXGroup;
+			children = (
+				E91427EC182D719100C0788F /* MassTransitApp */,
+				E91427E5182D719100C0788F /* Frameworks */,
+				E91427E4182D719100C0788F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E91427E4182D719100C0788F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E91427E3182D719100C0788F /* MassTransitApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E91427E5182D719100C0788F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E925048E1832F11F00EF1FDE /* MapKit.framework */,
+				E925048C1832EB3200EF1FDE /* CoreLocation.framework */,
+				E98FBDBF182D91300063AA78 /* libsqlite3.dylib */,
+				E925F8821830988D00AFB33E /* QuartzCore.framework */,
+				E91427E6182D719100C0788F /* UIKit.framework */,
+				E91427E8182D719100C0788F /* Foundation.framework */,
+				E91427EA182D719100C0788F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E91427EC182D719100C0788F /* MassTransitApp */ = {
+			isa = PBXGroup;
+			children = (
+				E9D23E5718306DD900751C40 /* Metrolink Table Views */,
+				E9D23E5818306DF600751C40 /* OCTA Table Views */,
+				E9D23E5518306DAF00751C40 /* Models Classes */,
+				E9D23E5618306DC500751C40 /* Database Model */,
+				E925F881183097F700AFB33E /* PDF MAP */,
+				E92504931833047A00EF1FDE /* Map */,
+				E91427ED182D719100C0788F /* Supporting Files */,
+			);
+			path = MassTransitApp;
+			sourceTree = "<group>";
+		};
+		E91427ED182D719100C0788F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E91427FE182D719100C0788F /* MainStoryboard.storyboard */,
+				E91427F6182D719100C0788F /* AppDelegate.m */,
+				E91427F5182D719100C0788F /* AppDelegate.h */,
+				E989838618309F6100FCF602 /* map.png */,
+				E9142804182D719100C0788F /* first.png */,
+				E9142806182D719100C0788F /* first@2x.png */,
+				E914280B182D719100C0788F /* second.png */,
+				E914280D182D719100C0788F /* second@2x.png */,
+				E9137EDA182D73B4005118E3 /* OCTA.sl3 */,
+				E9137EDB182D73B4005118E3 /* Metrolink.sl3 */,
+				E989838818309FFD00FCF602 /* 103-map.png */,
+				E91427EE182D719100C0788F /* MassTransitApp-Info.plist */,
+				E91427EF182D719100C0788F /* InfoPlist.strings */,
+				E925F872183095E500AFB33E /* paper32.png */,
+				E925F873183095E500AFB33E /* note32.png */,
+				E91427F2182D719100C0788F /* main.m */,
+				E91427F4182D719100C0788F /* MassTransitApp-Prefix.pch */,
+				E91427F8182D719100C0788F /* Default.png */,
+				E91427FA182D719100C0788F /* Default@2x.png */,
+				E91427FC182D719100C0788F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E92504931833047A00EF1FDE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E92504891832E96400EF1FDE /* MSDetailViewController.h */,
+				E925048A1832E96400EF1FDE /* MSDetailViewController.m */,
+				E9250490183301A500EF1FDE /* MapAnnotation.h */,
+				E9250491183301A600EF1FDE /* MapAnnotation.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		E925F881183097F700AFB33E /* PDF MAP */ = {
+			isa = PBXGroup;
+			children = (
+				E925F88418309A2000AFB33E /* OCTAViewController.h */,
+				E925F88518309A2000AFB33E /* OCTAViewController.m */,
+				E925F8761830973800AFB33E /* MetrolineViewController.h */,
+				E925F8771830973800AFB33E /* MetrolineViewController.m */,
+				E925F8781830973800AFB33E /* PDFScrollView.h */,
+				E925F8791830973800AFB33E /* PDFScrollView.m */,
+				E925F87A1830973800AFB33E /* TiledPDFView.h */,
+				E925F87B1830973800AFB33E /* TiledPDFView.m */,
+				E989838418309B0D00FCF602 /* octa_sysmapoct13.pdf */,
+				E925F87F183097ED00AFB33E /* metrolink_system_map.pdf */,
+			);
+			name = "PDF MAP";
+			sourceTree = "<group>";
+		};
+		E9D23E5518306DAF00751C40 /* Models Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E98EEE3F182EEB0B00897979 /* Route.h */,
+				E98EEE40182EEB0B00897979 /* Route.m */,
+				E98EEE421830294500897979 /* Station.h */,
+				E98EEE431830294500897979 /* Station.m */,
+			);
+			name = "Models Classes";
+			sourceTree = "<group>";
+		};
+		E9D23E5618306DC500751C40 /* Database Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9137EDE182D8ED4005118E3 /* SQLiteDB.h */,
+				E9137EDF182D8ED4005118E3 /* SQLiteDB.m */,
+				E98FBDC1182D95080063AA78 /* GTDFSQL.h */,
+				E98FBDC2182D95080063AA78 /* GTDFSQL.m */,
+				E92808F8182DCF5300C9AED8 /* Metrolink.h */,
+				E92808F9182DCF5300C9AED8 /* Metrolink.m */,
+				E92808FB182DD26000C9AED8 /* OCTA.h */,
+				E92808FC182DD26000C9AED8 /* OCTA.m */,
+			);
+			name = "Database Model";
+			sourceTree = "<group>";
+		};
+		E9D23E5718306DD900751C40 /* Metrolink Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				E98EEE39182DD9EA00897979 /* MetroLineListOFALLRoutes.h */,
+				E98EEE3A182DD9EA00897979 /* MetroLineListOFALLRoutes.m */,
+				E9C344841830470100ADB830 /* MetrolineListOFAllStationInARoute.h */,
+				E9C344851830470100ADB830 /* MetrolineListOFAllStationInARoute.m */,
+			);
+			name = "Metrolink Table Views";
+			sourceTree = "<group>";
+		};
+		E9D23E5818306DF600751C40 /* OCTA Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				E98EEE3C182DDC2F00897979 /* OCTAListOFALLRoutes.h */,
+				E98EEE3D182DDC2F00897979 /* OCTAListOFALLRoutes.m */,
+				E9C3448A1830563200ADB830 /* OCTAListOFAllStationInARoute.h */,
+				E9C3448B1830563200ADB830 /* OCTAListOFAllStationInARoute.m */,
+			);
+			name = "OCTA Table Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E91427E2182D719100C0788F /* MassTransitApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9142811182D719100C0788F /* Build configuration list for PBXNativeTarget "MassTransitApp" */;
+			buildPhases = (
+				E91427DF182D719100C0788F /* Sources */,
+				E91427E0182D719100C0788F /* Frameworks */,
+				E91427E1182D719100C0788F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MassTransitApp;
+			productName = MassTransitApp;
+			productReference = E91427E3182D719100C0788F /* MassTransitApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E91427DB182D719100C0788F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Khalid;
+			};
+			buildConfigurationList = E91427DE182D719100C0788F /* Build configuration list for PBXProject "MassTransitApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E91427DA182D719100C0788F;
+			productRefGroup = E91427E4182D719100C0788F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E91427E2182D719100C0788F /* MassTransitApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E91427E1182D719100C0788F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91427F1182D719100C0788F /* InfoPlist.strings in Resources */,
+				E91427F9182D719100C0788F /* Default.png in Resources */,
+				E91427FB182D719100C0788F /* Default@2x.png in Resources */,
+				E91427FD182D719100C0788F /* Default-568h@2x.png in Resources */,
+				E9142800182D719100C0788F /* MainStoryboard.storyboard in Resources */,
+				E9142805182D719100C0788F /* first.png in Resources */,
+				E9142807182D719100C0788F /* first@2x.png in Resources */,
+				E914280C182D719100C0788F /* second.png in Resources */,
+				E914280E182D719100C0788F /* second@2x.png in Resources */,
+				E9137EDC182D73B4005118E3 /* OCTA.sl3 in Resources */,
+				E9137EDD182D73B4005118E3 /* Metrolink.sl3 in Resources */,
+				E925F874183095E500AFB33E /* paper32.png in Resources */,
+				E925F875183095E500AFB33E /* note32.png in Resources */,
+				E925F880183097ED00AFB33E /* metrolink_system_map.pdf in Resources */,
+				E989838518309B0D00FCF602 /* octa_sysmapoct13.pdf in Resources */,
+				E989838718309F6100FCF602 /* map.png in Resources */,
+				E989838918309FFD00FCF602 /* 103-map.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E91427DF182D719100C0788F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91427F3182D719100C0788F /* main.m in Sources */,
+				E91427F7182D719100C0788F /* AppDelegate.m in Sources */,
+				E9137EE0182D8ED4005118E3 /* SQLiteDB.m in Sources */,
+				E98FBDC3182D95080063AA78 /* GTDFSQL.m in Sources */,
+				E92808FA182DCF5300C9AED8 /* Metrolink.m in Sources */,
+				E92808FD182DD26000C9AED8 /* OCTA.m in Sources */,
+				E98EEE3B182DD9EA00897979 /* MetroLineListOFALLRoutes.m in Sources */,
+				E98EEE3E182DDC2F00897979 /* OCTAListOFALLRoutes.m in Sources */,
+				E98EEE41182EEB0B00897979 /* Route.m in Sources */,
+				E98EEE441830294600897979 /* Station.m in Sources */,
+				E9C344861830470100ADB830 /* MetrolineListOFAllStationInARoute.m in Sources */,
+				E9C3448C1830563200ADB830 /* OCTAListOFAllStationInARoute.m in Sources */,
+				E925F87C1830973800AFB33E /* MetrolineViewController.m in Sources */,
+				E925F87D1830973800AFB33E /* PDFScrollView.m in Sources */,
+				E925F87E1830973800AFB33E /* TiledPDFView.m in Sources */,
+				E925F88618309A2000AFB33E /* OCTAViewController.m in Sources */,
+				E925048B1832E96400EF1FDE /* MSDetailViewController.m in Sources */,
+				E9250492183301A600EF1FDE /* MapAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E91427EF182D719100C0788F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E91427F0182D719100C0788F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E91427FE182D719100C0788F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E91427FF182D719100C0788F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E914280F182D719100C0788F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9142810182D719100C0788F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9142812182D719100C0788F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MassTransitApp/MassTransitApp-Prefix.pch";
+				INFOPLIST_FILE = "MassTransitApp/MassTransitApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E9142813182D719100C0788F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MassTransitApp/MassTransitApp-Prefix.pch";
+				INFOPLIST_FILE = "MassTransitApp/MassTransitApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E91427DE182D719100C0788F /* Build configuration list for PBXProject "MassTransitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E914280F182D719100C0788F /* Debug */,
+				E9142810182D719100C0788F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9142811182D719100C0788F /* Build configuration list for PBXNativeTarget "MassTransitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9142812182D719100C0788F /* Debug */,
+				E9142813182D719100C0788F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E91427DB182D719100C0788F /* Project object */;
+}

@@ -1,0 +1,253 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9040FF1180A522800C539D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9040FF0180A522800C539D7 /* Foundation.framework */; };
+		E9040FF4180A522900C539D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9040FF3180A522900C539D7 /* main.m */; };
+		E9040FF8180A522900C539D7 /* NSCopyingProtocolExample.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9040FF7180A522900C539D7 /* NSCopyingProtocolExample.1 */; };
+		E9041000180A524500C539D7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E9040FFF180A524500C539D7 /* Person.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9040FEB180A522800C539D7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				E9040FF8180A522900C539D7 /* NSCopyingProtocolExample.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E9040FED180A522800C539D7 /* NSCopyingProtocolExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSCopyingProtocolExample; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9040FF0180A522800C539D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9040FF3180A522900C539D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9040FF6180A522900C539D7 /* NSCopyingProtocolExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSCopyingProtocolExample-Prefix.pch"; sourceTree = "<group>"; };
+		E9040FF7180A522900C539D7 /* NSCopyingProtocolExample.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NSCopyingProtocolExample.1; sourceTree = "<group>"; };
+		E9040FFE180A524500C539D7 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E9040FFF180A524500C539D7 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9040FEA180A522800C539D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9040FF1180A522800C539D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9040FE4180A522800C539D7 = {
+			isa = PBXGroup;
+			children = (
+				E9040FF2180A522800C539D7 /* NSCopyingProtocolExample */,
+				E9040FEF180A522800C539D7 /* Frameworks */,
+				E9040FEE180A522800C539D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9040FEE180A522800C539D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9040FED180A522800C539D7 /* NSCopyingProtocolExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9040FEF180A522800C539D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9040FF0180A522800C539D7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9040FF2180A522800C539D7 /* NSCopyingProtocolExample */ = {
+			isa = PBXGroup;
+			children = (
+				E9040FFE180A524500C539D7 /* Person.h */,
+				E9040FFF180A524500C539D7 /* Person.m */,
+				E9040FF3180A522900C539D7 /* main.m */,
+				E9040FF7180A522900C539D7 /* NSCopyingProtocolExample.1 */,
+				E9040FF5180A522900C539D7 /* Supporting Files */,
+			);
+			path = NSCopyingProtocolExample;
+			sourceTree = "<group>";
+		};
+		E9040FF5180A522900C539D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9040FF6180A522900C539D7 /* NSCopyingProtocolExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9040FEC180A522800C539D7 /* NSCopyingProtocolExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9040FFB180A522900C539D7 /* Build configuration list for PBXNativeTarget "NSCopyingProtocolExample" */;
+			buildPhases = (
+				E9040FE9180A522800C539D7 /* Sources */,
+				E9040FEA180A522800C539D7 /* Frameworks */,
+				E9040FEB180A522800C539D7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSCopyingProtocolExample;
+			productName = NSCopyingProtocolExample;
+			productReference = E9040FED180A522800C539D7 /* NSCopyingProtocolExample */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9040FE5180A522800C539D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Khalid;
+			};
+			buildConfigurationList = E9040FE8180A522800C539D7 /* Build configuration list for PBXProject "NSCopyingProtocolExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E9040FE4180A522800C539D7;
+			productRefGroup = E9040FEE180A522800C539D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9040FEC180A522800C539D7 /* NSCopyingProtocolExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9040FE9180A522800C539D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9040FF4180A522900C539D7 /* main.m in Sources */,
+				E9041000180A524500C539D7 /* Person.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E9040FF9180A522900C539D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E9040FFA180A522900C539D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E9040FFC180A522900C539D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSCopyingProtocolExample/NSCopyingProtocolExample-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9040FFD180A522900C539D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSCopyingProtocolExample/NSCopyingProtocolExample-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9040FE8180A522800C539D7 /* Build configuration list for PBXProject "NSCopyingProtocolExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9040FF9180A522900C539D7 /* Debug */,
+				E9040FFA180A522900C539D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9040FFB180A522900C539D7 /* Build configuration list for PBXNativeTarget "NSCopyingProtocolExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9040FFC180A522900C539D7 /* Debug */,
+				E9040FFD180A522900C539D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9040FE5180A522800C539D7 /* Project object */;
+}

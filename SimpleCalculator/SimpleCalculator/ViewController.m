@@ -11,11 +11,11 @@
 @interface ViewController ()
 
 @property (nonatomic,retain) CalculatorLogic *cLogic; // The model object .. 
-@property (assign) BOOL isUserEnteredDecimalPoint; // an indicator to check if the user enter a decimal point, the purpose of this flage is to handel the cases when the user enter the decimal point at the beginning of the number or in the middel
-@property (assign) BOOL isUserPressedOperartion;
-@property (assign) BOOL isUserPressedOperand;
-@property (assign) BOOL isUserPressedEnter;
-@property (nonatomic,retain) NSString *previousOperation;
+@property (assign) BOOL isUserEnteredDecimalPoint; // a flage  to check whether the user enter a decimal point or not.
+@property (assign) BOOL isUserPressedOperartion; //  a flage  to check whether the user enter a pressed operation or not.
+@property (assign) BOOL isUserPressedOperand; //  a flage  to check whether the user enter a pressed operand or not.
+@property (assign) BOOL isUserPressedEnter; // a flage  to check whether the user enter a pressed equal or not.
+@property (nonatomic,retain) NSString *previousOperation; // a temp to store the previous entered operation
 
 
 @end
@@ -31,11 +31,9 @@
 
 
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
     cLogic=[[CalculatorLogic alloc]init];
     isUserEnteredDecimalPoint=NO;
@@ -44,7 +42,6 @@
     isUserPressedEnter=NO;
     previousOperation=[[NSString alloc]init];
     
-
     cLogic.runningResult=0.0;
     cLogic.waitingOperand=0.0;
     cLogic.waitingOperation=@"";
@@ -59,6 +56,11 @@
 
 - (IBAction)operandISPressed:(UIButton *)sender
 {
+    if(![self.screenLabel.text isEqualToString:@""] && isUserPressedEnter==YES &&isUserPressedOperartion==NO)
+    {
+        [self clear:sender];
+    }
+    
     
     if(isUserPressedOperartion==YES && isUserPressedOperand==NO)
     {
@@ -66,19 +68,21 @@
         
     }
     
+    
     NSString *temp=[NSString stringWithString:[self.screenLabel.text stringByAppendingString:sender.currentTitle]];
+    
     char lastChar = [temp characterAtIndex:[temp length] - 1];
     char firstChar =[temp characterAtIndex:1];
     
-    if ((firstChar =='.' && isUserEnteredDecimalPoint==NO))
+    if ((firstChar =='.' && isUserEnteredDecimalPoint==NO)) // if the user entered the deciemal point first ex. 0.01
     {
         self.screenLabel.text=[self.screenLabel.text stringByAppendingString:sender.currentTitle];
         isUserEnteredDecimalPoint=YES;;
     }
     
-    else
+    else // The decimal point wasn't the first entered
     {
-        if(lastChar == '.' && isUserEnteredDecimalPoint==NO)
+        if(lastChar == '.' && isUserEnteredDecimalPoint==NO) // 
             {
                 self.screenLabel.text=[self.screenLabel.text stringByAppendingString:sender.currentTitle];
                 isUserEnteredDecimalPoint=YES;
@@ -90,7 +94,7 @@
                 self.screenLabel.text=[self.screenLabel.text stringByAppendingString:sender.currentTitle];
             }
         }
-        
+
         if(firstChar != '.')
         {
             if ([self.screenLabel.text hasPrefix:@"0"] && [self.screenLabel.text length] >= 1)
@@ -107,11 +111,12 @@
             }
         }
     }
+    
+    
     isUserPressedOperand=YES;
     
     cLogic.waitingOperand=[self.screenLabel.text doubleValue];
 }
-
 
 
 
@@ -129,7 +134,7 @@
     
     cLogic.waitingOperation = sender.currentTitle;
     
-    if (cLogic.runningResult==0)
+    if (cLogic.runningResult==0) // in case if the user enterd operand then press equal 
     {
         cLogic.runningResult=cLogic.waitingOperand;
     }
@@ -138,22 +143,22 @@
     {
         if(isUserPressedEnter ==NO && [previousOperation isEqualToString:cLogic.waitingOperation])
         {
-        [cLogic CalculateWithOperandA:cLogic.runningResult ANDOperandB:cLogic.waitingOperand UsingOperation:cLogic.waitingOperation];
-            
-        self.screenLabel.text=[NSString stringWithFormat:@"%.2f",cLogic.runningResult];
-
+            [cLogic Calculate];
+            self.screenLabel.text=[NSString stringWithFormat:@"%.2f",cLogic.runningResult];
             
         }
         else
         {            
             if (isUserPressedEnter==NO || (isUserPressedEnter==YES && [previousOperation isEqualToString:cLogic.waitingOperation]))
             {
-                [cLogic CalculateWithOperandA:cLogic.runningResult ANDOperandB:cLogic.waitingOperand UsingOperation:previousOperation];
-                
+                cLogic.waitingOperation = previousOperation;
+
+                [cLogic Calculate];
+                cLogic.waitingOperation = sender.currentTitle;
+
                 self.screenLabel.text=[NSString stringWithFormat:@"%.2f",cLogic.runningResult];
                 
             }
-        
         }
     }
     
@@ -161,6 +166,7 @@
 
 - (IBAction)clear:(UIButton *)sender {
     
+    //clear all the vars
     self.screenLabel.text=@"0";
     isUserEnteredDecimalPoint=NO;
     isUserPressedOperartion=NO;
@@ -168,6 +174,7 @@
     isUserPressedEnter=NO;
     self.cLogic.runningResult=0.0;
     self.cLogic.waitingOperand=0.0;
+    self.cLogic.waitingOperation=@"";
     previousOperation=@"";
     
     
@@ -182,11 +189,15 @@
     }
     else
     {
-        [cLogic CalculateWithOperandA:cLogic.runningResult ANDOperandB:cLogic.waitingOperand UsingOperation:cLogic.waitingOperation];
+        [cLogic Calculate];
     }
-
+    
+    cLogic.waitingOperand=0.0;
+    
     isUserPressedEnter=YES;
+    isUserPressedOperartion=NO;
     self.screenLabel.text=[NSString stringWithFormat:@"%.2f",cLogic.runningResult];
+    
 }
 
 - (IBAction)squareRoot:(UIButton *)sender {
@@ -196,12 +207,14 @@
         cLogic.runningResult=cLogic.waitingOperand;
     }
 
-    double squareRootResult=sqrt(cLogic.runningResult);
-    self.screenLabel.text=[NSString stringWithFormat:@"%.2f",squareRootResult];
-    cLogic.runningResult=squareRootResult;
+    
+    cLogic.waitingOperation=@"sqr";
+    
+    [cLogic Calculate];
+    
+    self.screenLabel.text=[NSString stringWithFormat:@"%.2f",cLogic.runningResult];
     
 }
-
 
 - (IBAction)signChange:(UIButton *)sender {
     
@@ -209,12 +222,13 @@
     {
         cLogic.runningResult= cLogic.waitingOperand;
     }
+
+    cLogic.waitingOperation=@"±";
     
-    double sign= -1 * cLogic.runningResult;
+    [cLogic Calculate];
     
-    self.screenLabel.text=[NSString stringWithFormat:@"%.2f",sign];
+    self.screenLabel.text=[NSString stringWithFormat:@"%.2f",cLogic.runningResult];
     
-    cLogic.runningResult=sign;
     
 }
 

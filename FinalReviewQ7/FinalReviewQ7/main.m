@@ -18,14 +18,17 @@ NSArray* evenBetter()
     NSMutableArray *arrayList=[[NSMutableArray alloc]init];
     NSString* query = @"SELECT * FROM students;";
     sqlite3_stmt *statement;
+    
     NSString* FN;
     NSString* LS;
     NSString* CWID;
     
     sqlite3 *db;
+    const unsigned char* text;
+
+    
     sqlite3_open("/Users/KHALID/xCodeFiles/CS411-Khalid/FinalReviewQ7/Stud.sl3", &db);
     
-    const unsigned char* text;
 
      if (sqlite3_prepare_v2(db, [query UTF8String],(int)[query length], &statement, nil) == SQLITE_OK)
      {
@@ -100,16 +103,17 @@ int main(int argc, const char * argv[])
         NSArray * sortedArray= [[NSArray alloc]initWithArray:[array sortedArrayUsingSelector:sel]];
        */
         
-        SEL sel=@selector(compare:);
+       // SEL sel=@selector(compare:);
         
         NSArray * array=evenBetter();
         
-        NSArray * sortedArray= [[NSArray alloc]initWithArray:[array sortedArrayUsingSelector:sel]];
+        NSArray * sortedArray= [[NSArray alloc]initWithArray:[array sortedArrayUsingSelector:@selector(compare:)]];
         
         for(id obj in sortedArray)
         {
             NSLog(@"%@ %@ %@",[obj firstName],[obj lastName],[obj CWID]);
         }
+        
         
     }
     return 0;

@@ -14,10 +14,6 @@
 
 @interface GraphViewController : UIViewController
 
-
-@property Profile * CurrentProfile;
-@property BarChart *BH;
-
-
+@property Profile *CurrentProfile;
 
 @end

@@ -11,8 +11,8 @@
 
 @implementation BarChart
 
-
-@synthesize CurrentProfile2;
+@synthesize OR;
+@synthesize Dis;
 
 
 - (id)initWithFrame:(CGRect)frame
@@ -25,8 +25,6 @@
 
 }
 
-
-
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
@@ -36,6 +34,7 @@
 		self.opaque = YES;
 		self.clearsContextBeforeDrawing = YES;
     }
+    
     
     return self;
 }
@@ -48,6 +47,8 @@
 - (void)drawRect:(CGRect)rect
 {
     
+    NSLog(@"BarChart%.2f",OR);
+    NSLog(@"BarChart%.2f",Dis);
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     

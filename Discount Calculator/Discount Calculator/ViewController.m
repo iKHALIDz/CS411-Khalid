@@ -10,13 +10,14 @@
 
 
 @interface ViewController ()
+{
+    
+    Profile *P;
 
+}
 @end
 
 @implementation ViewController
-
-
-Profile *P;
 
 
 
@@ -96,13 +97,9 @@ Profile *P;
 {
     
         GraphViewController *GVC=[segue destinationViewController];
+    
         [GVC setCurrentProfile:P];
     
+    
 }
-
-
-    
-    
-            
-        
-        @end
+@end

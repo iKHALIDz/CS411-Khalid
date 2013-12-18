@@ -56,10 +56,12 @@
     
     if (_lastName!=lastName)
     {
-        [_lastName release];
+        NSString *old=_lastName;
         _lastName=[lastName retain];
+        [old release];
     }
 }
+
 
 -(id)initwithFirstName:(NSString *)firstName AndLastName:(NSString *)lastName AndCWID:(NSString*)cwid
 {
@@ -79,7 +81,5 @@
 {
     return [ [self CWID] compare:[otherObject CWID]];
 }
-
-
 
 @end

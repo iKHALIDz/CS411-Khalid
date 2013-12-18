@@ -15,9 +15,6 @@
 @implementation GraphViewController
 
 @synthesize CurrentProfile;
-@synthesize BH;
-
-
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,20 +37,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+        
+    ((BarChart*)self.view).OR = CurrentProfile.OriginalPrice;
     
-    
-    NSLog(@"%.2f",CurrentProfile.OriginalPrice);
-    NSLog(@"%.2f",CurrentProfile.DiscountPrice);
-    
-    
-    BH.CurrentProfile2.OriginalPrice=CurrentProfile.OriginalPrice;
-    BH.CurrentProfile2.DiscountPrice=CurrentProfile.DiscountPrice;
+    ((BarChart*)self.view).Dis = CurrentProfile.DiscountPrice;
     
     
     
-    NSLog(@"%.2f",BH.CurrentProfile2.OriginalPrice);
-    NSLog(@"%.2f",BH.CurrentProfile2.DiscountPrice);
+    NSLog(@"Graph %.2f",CurrentProfile.OriginalPrice);
+    NSLog(@"Graph %.2f",CurrentProfile.DiscountPrice);
     
+    NSLog(@"BAR %.2f",((BarChart*)self.view).OR);
+    NSLog(@"BAR %.2f",((BarChart*)self.view).Dis);
     
     UISwipeGestureRecognizer *rightSwip = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(RightSwipeSegue:)];
     

@@ -1,0 +1,260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9BB0EF3185CEF460092331C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BB0EF2185CEF460092331C /* Foundation.framework */; };
+		E9BB0EF6185CEF460092331C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BB0EF5185CEF460092331C /* main.m */; };
+		E9BB0EFA185CEF460092331C /* Final_Review__Q2__NSCopying.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9BB0EF9185CEF460092331C /* Final_Review__Q2__NSCopying.1 */; };
+		E9BB0F02185CEF700092331C /* Thing.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BB0F01185CEF700092331C /* Thing.m */; };
+		E9BB0F08185CFA5F0092331C /* Thing+formattedString.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BB0F07185CFA5F0092331C /* Thing+formattedString.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9BB0EED185CEF460092331C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				E9BB0EFA185CEF460092331C /* Final_Review__Q2__NSCopying.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E9BB0EEF185CEF460092331C /* Final Review-(Q2) NSCopying */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Final Review-(Q2) NSCopying"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BB0EF2185CEF460092331C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9BB0EF5185CEF460092331C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9BB0EF8185CEF460092331C /* Final Review-(Q2) NSCopying-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Final Review-(Q2) NSCopying-Prefix.pch"; sourceTree = "<group>"; };
+		E9BB0EF9185CEF460092331C /* Final_Review__Q2__NSCopying.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Final_Review__Q2__NSCopying.1; sourceTree = "<group>"; };
+		E9BB0F00185CEF700092331C /* Thing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thing.h; sourceTree = "<group>"; };
+		E9BB0F01185CEF700092331C /* Thing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thing.m; sourceTree = "<group>"; };
+		E9BB0F06185CFA5F0092331C /* Thing+formattedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Thing+formattedString.h"; sourceTree = "<group>"; };
+		E9BB0F07185CFA5F0092331C /* Thing+formattedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Thing+formattedString.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9BB0EEC185CEF460092331C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BB0EF3185CEF460092331C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9BB0EE6185CEF460092331C = {
+			isa = PBXGroup;
+			children = (
+				E9BB0F06185CFA5F0092331C /* Thing+formattedString.h */,
+				E9BB0F07185CFA5F0092331C /* Thing+formattedString.m */,
+				E9BB0EF4185CEF460092331C /* Final Review-(Q2) NSCopying */,
+				E9BB0EF1185CEF460092331C /* Frameworks */,
+				E9BB0EF0185CEF460092331C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9BB0EF0185CEF460092331C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9BB0EEF185CEF460092331C /* Final Review-(Q2) NSCopying */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9BB0EF1185CEF460092331C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9BB0EF2185CEF460092331C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9BB0EF4185CEF460092331C /* Final Review-(Q2) NSCopying */ = {
+			isa = PBXGroup;
+			children = (
+				E9BB0EF5185CEF460092331C /* main.m */,
+				E9BB0F00185CEF700092331C /* Thing.h */,
+				E9BB0F01185CEF700092331C /* Thing.m */,
+				E9BB0EF9185CEF460092331C /* Final_Review__Q2__NSCopying.1 */,
+				E9BB0EF7185CEF460092331C /* Supporting Files */,
+			);
+			path = "Final Review-(Q2) NSCopying";
+			sourceTree = "<group>";
+		};
+		E9BB0EF7185CEF460092331C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9BB0EF8185CEF460092331C /* Final Review-(Q2) NSCopying-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9BB0EEE185CEF460092331C /* Final Review-(Q2) NSCopying */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BB0EFD185CEF460092331C /* Build configuration list for PBXNativeTarget "Final Review-(Q2) NSCopying" */;
+			buildPhases = (
+				E9BB0EEB185CEF460092331C /* Sources */,
+				E9BB0EEC185CEF460092331C /* Frameworks */,
+				E9BB0EED185CEF460092331C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Final Review-(Q2) NSCopying";
+			productName = "Final Review-(Q2) NSCopying";
+			productReference = E9BB0EEF185CEF460092331C /* Final Review-(Q2) NSCopying */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9BB0EE7185CEF460092331C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Khalid;
+			};
+			buildConfigurationList = E9BB0EEA185CEF460092331C /* Build configuration list for PBXProject "Final Review-(Q2) NSCopying" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E9BB0EE6185CEF460092331C;
+			productRefGroup = E9BB0EF0185CEF460092331C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9BB0EEE185CEF460092331C /* Final Review-(Q2) NSCopying */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9BB0EEB185CEF460092331C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BB0EF6185CEF460092331C /* main.m in Sources */,
+				E9BB0F02185CEF700092331C /* Thing.m in Sources */,
+				E9BB0F08185CFA5F0092331C /* Thing+formattedString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E9BB0EFB185CEF460092331C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E9BB0EFC185CEF460092331C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E9BB0EFE185CEF460092331C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Final Review-(Q2) NSCopying/Final Review-(Q2) NSCopying-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9BB0EFF185CEF460092331C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Final Review-(Q2) NSCopying/Final Review-(Q2) NSCopying-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9BB0EEA185CEF460092331C /* Build configuration list for PBXProject "Final Review-(Q2) NSCopying" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BB0EFB185CEF460092331C /* Debug */,
+				E9BB0EFC185CEF460092331C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9BB0EFD185CEF460092331C /* Build configuration list for PBXNativeTarget "Final Review-(Q2) NSCopying" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BB0EFE185CEF460092331C /* Debug */,
+				E9BB0EFF185CEF460092331C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9BB0EE7185CEF460092331C /* Project object */;
+}

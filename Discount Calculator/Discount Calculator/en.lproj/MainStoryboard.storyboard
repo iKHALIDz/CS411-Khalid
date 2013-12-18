@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -68,12 +68,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9L-sA-WeD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9L-sA-WeD">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="91" id="Axu-BT-2lf"/>
+                                    <constraint firstAttribute="width" constant="336" id="oT4-7Q-sjm"/>
+                                    <constraint firstAttribute="height" constant="67" id="sFY-Mz-Gho"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="tintColor" red="0.65075600602490069" green="0.65898745061410391" blue="0.67881708559782616" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" red="0.04248046875" green="0.017354525419999999" blue="0.031976090999999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="0.16543742511086168" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
@@ -91,20 +91,20 @@
                             <constraint firstItem="4o5-Vm-MaH" firstAttribute="top" secondItem="3" secondAttribute="top" constant="132" id="0F4-N8-Lu6"/>
                             <constraint firstItem="Bza-u5-pGK" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="123" id="1vV-lb-QGl"/>
                             <constraint firstItem="jQr-0t-g4H" firstAttribute="trailing" secondItem="0hl-rM-aBj" secondAttribute="trailing" type="default" id="39q-6e-PPi"/>
+                            <constraint firstItem="N9L-sA-WeD" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="-14" id="4NT-58-bUs"/>
+                            <constraint firstItem="0hl-rM-aBj" firstAttribute="top" secondItem="3" secondAttribute="top" constant="93" id="9FE-P0-iGe"/>
                             <constraint firstItem="jQr-0t-g4H" firstAttribute="leading" secondItem="0hl-rM-aBj" secondAttribute="leading" type="default" id="9rL-1k-KoD"/>
                             <constraint firstItem="jQr-0t-g4H" firstAttribute="top" secondItem="3" secondAttribute="top" constant="165" id="E1j-Kc-MOV"/>
-                            <constraint firstItem="0hl-rM-aBj" firstAttribute="top" secondItem="3" secondAttribute="top" constant="87" id="FB8-bf-xg3"/>
                             <constraint firstItem="bUS-R7-U26" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="FRh-a8-YSy"/>
                             <constraint firstAttribute="bottom" secondItem="QYG-mW-9lY" secondAttribute="bottom" constant="93" id="HTc-9W-WWQ"/>
                             <constraint firstItem="4o5-Vm-MaH" firstAttribute="leading" secondItem="Bza-u5-pGK" secondAttribute="leading" type="default" id="J3f-Ba-bdF"/>
                             <constraint firstAttribute="bottom" secondItem="n3Q-lu-CYU" secondAttribute="bottom" constant="153" id="LDt-f6-aVI"/>
                             <constraint firstItem="5of-wN-hZy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="198" id="MPP-tl-TTl"/>
-                            <constraint firstItem="N9L-sA-WeD" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="102" id="TmZ-FY-0mF"/>
-                            <constraint firstItem="N9L-sA-WeD" firstAttribute="centerX" secondItem="QYG-mW-9lY" secondAttribute="centerX" type="default" id="Ybn-oC-0zv"/>
                             <constraint firstItem="bUS-R7-U26" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="gAi-dP-XkK"/>
-                            <constraint firstAttribute="bottom" secondItem="N9L-sA-WeD" secondAttribute="bottom" constant="10" id="lMg-6Q-nLC"/>
+                            <constraint firstItem="n3Q-lu-CYU" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="127" id="j5R-ot-Q1Y"/>
                             <constraint firstItem="bUS-R7-U26" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="mdP-yG-J45"/>
                             <constraint firstItem="Bza-u5-pGK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="62" id="p9k-KH-ii7"/>
+                            <constraint firstItem="N9L-sA-WeD" firstAttribute="top" secondItem="3" secondAttribute="top" constant="397" id="s8K-Hi-TCI"/>
                             <constraint firstItem="QYG-mW-9lY" firstAttribute="leading" secondItem="n3Q-lu-CYU" secondAttribute="leading" type="default" id="sLI-uU-wN5"/>
                             <constraint firstItem="4o5-Vm-MaH" firstAttribute="leading" secondItem="5of-wN-hZy" secondAttribute="leading" type="default" id="umf-3T-6FX"/>
                             <constraint firstItem="4o5-Vm-MaH" firstAttribute="trailing" secondItem="5of-wN-hZy" secondAttribute="trailing" type="default" id="xwd-LZ-Hsm"/>
@@ -126,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1204" y="6"/>
+            <point key="canvasLocation" x="1282" y="6"/>
         </scene>
         <!--Graph View Controller-->
         <scene sceneID="xWI-P5-f6K">
@@ -144,12 +144,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="So2-ck-zg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686" y="0.0"/>
+            <point key="canvasLocation" x="1842" y="-2"/>
         </scene>
     </scenes>
     <resources>
         <image name="Discount Calc.jpg" width="640" height="960"/>
     </resources>
+    <classes>
+        <class className="BarChart" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BarChart.h"/>
+        </class>
+        <class className="GraphViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GraphViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="DiscountCalculate:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="AdditionlDiscTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="DiscountPriceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="DiscountTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="DollarsOffTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="OriginalPriceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="PriceTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="TaxTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

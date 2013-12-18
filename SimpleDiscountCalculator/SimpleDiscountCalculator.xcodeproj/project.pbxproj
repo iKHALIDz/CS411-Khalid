@@ -22,6 +22,7 @@
 		E9040F601804B7D300C539D7 /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9040F5F1804B7D300C539D7 /* GraphViewController.m */; };
 		E9040F631804B93600C539D7 /* DiscountProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = E9040F621804B93600C539D7 /* DiscountProfile.m */; };
 		E9040F661804F93100C539D7 /* BarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E9040F651804F93100C539D7 /* BarChart.m */; };
+		E9A6EEEF1851BA4200AA41EC /* dollar-sign-3.png in Resources */ = {isa = PBXBuildFile; fileRef = E9A6EEEE1851BA4200AA41EC /* dollar-sign-3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E9040F621804B93600C539D7 /* DiscountProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscountProfile.m; sourceTree = "<group>"; };
 		E9040F641804F93100C539D7 /* BarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChart.h; sourceTree = "<group>"; };
 		E9040F651804F93100C539D7 /* BarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChart.m; sourceTree = "<group>"; };
+		E9A6EEEE1851BA4200AA41EC /* dollar-sign-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dollar-sign-3.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		E9040F2D1804A59F00C539D7 = {
 			isa = PBXGroup;
 			children = (
+				E9A6EEEE1851BA4200AA41EC /* dollar-sign-3.png */,
 				E9040F3F1804A59F00C539D7 /* SimpleDiscountCalculator */,
 				E9040F381804A59F00C539D7 /* Frameworks */,
 				E9040F371804A59F00C539D7 /* Products */,
@@ -182,6 +185,7 @@
 				E9040F501804A59F00C539D7 /* Default-568h@2x.png in Resources */,
 				E9040F531804A59F00C539D7 /* MainStoryboard.storyboard in Resources */,
 				E9040F5D1804B5FB00C539D7 /* Discount Calc.jpg in Resources */,
+				E9A6EEEF1851BA4200AA41EC /* dollar-sign-3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

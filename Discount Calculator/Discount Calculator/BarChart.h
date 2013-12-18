@@ -12,8 +12,9 @@
 
 @interface BarChart : UIView
 
-@property Profile * CurrentProfile2;
 
+@property double OR;
+@property double Dis;
 
 
 @end

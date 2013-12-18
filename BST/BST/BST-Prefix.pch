@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'BST' target in the 'BST' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

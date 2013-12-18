@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "GraphViewController.h"
-
 #import "Profile.h"
-
+#import "BarChart.h"
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
+
+
 @property (weak, nonatomic) IBOutlet UITextField *PriceTextField;
 @property (weak, nonatomic) IBOutlet UITextField *DollarsOffTextField;
 @property (weak, nonatomic) IBOutlet UITextField *DiscountTextField;
-
 @property (weak, nonatomic) IBOutlet UITextField *AdditionlDiscTextField;
 
 @property (weak, nonatomic) IBOutlet UITextField *TaxTextField;

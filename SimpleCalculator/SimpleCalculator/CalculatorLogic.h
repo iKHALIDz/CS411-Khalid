@@ -14,7 +14,6 @@
 @property (nonatomic,retain) NSString * waitingOperation;
 @property (assign) double runningResult;
 
--(void) CalculateWithOperandA:(float)OPA ANDOperandB:(float)OPB UsingOperation:(NSString*)opt;
-
+-(void) Calculate;
 
 @end

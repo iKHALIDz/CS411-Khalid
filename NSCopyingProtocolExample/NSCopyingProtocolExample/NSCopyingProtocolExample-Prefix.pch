@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'NSCopyingProtocolExample' target in the 'NSCopyingProtocolExample' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
